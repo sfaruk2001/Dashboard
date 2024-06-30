@@ -50,7 +50,7 @@ ul li {
 .header {
     grid-column: 2 / 3;
     background-color: aliceblue;
-    padding: 16px;
+    /** Padding */
     display: grid;
     grid-template-rows: 1fr 1fr;
     
@@ -59,10 +59,25 @@ ul li {
 .header-top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header-pfp {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.header-top img {
+    width: 40px;
 }
 
 input[type='search'] {
-    min-width: 45vw;
+    height: 25px;
+    width: 45vw;
+    max-width: 471px;
+    border-radius: 15px;
+   
 }
 
 .header-bottom {
