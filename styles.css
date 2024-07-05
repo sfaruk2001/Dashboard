@@ -19,12 +19,21 @@
     grid-template-columns: 1fr;
     gap: 30px;
     padding: 16px;
-    background-color: rgb(88, 186, 247);
+    background-color: rgb(109, 43, 224);
 }
+
 
 .logo {
     grid-row: 1 / 2;
     display: flex;
+}
+
+.logo > img {
+    width: 40px;
+}
+
+.dashboard-text {
+    align-self: center;
 }
 
 nav {
@@ -48,7 +57,7 @@ ul li {
 .content-wrap {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: auto 6fr;
 }
 
 .header {
@@ -70,10 +79,25 @@ ul li {
     display: flex;
     align-items: center;
     margin-right: 10px;
+    gap: 15px;
 }
 
-.header-top img {
+.small-bat {
     width: 40px;
+}
+
+.bell {
+    width: 20px;
+}
+
+
+.header-search {
+    display: flex;
+    gap: 5px;
+}
+
+.header-search > img {
+    width: 20px;
 }
 
 input[type='search'] {
@@ -93,13 +117,17 @@ input[type='search'] {
 .header-bio {
     display: flex;
     align-items: center;
-    
+    gap: 10px;
+}
+
+.header-bio > img {
+    width: 50px;
 }
 
 .header-buttons > button {
     width: 75px;
     height: 30px;
-    background-color: rgb(0, 174, 255);
+    background-color: rgb(109, 43, 224);
     color: white;
     
     border-radius: 10px;
@@ -144,7 +172,7 @@ input[type='search'] {
     padding: 20px;
     display: grid;
     grid-template-rows: 4fr 1fr;
-    /** box-shadow: inset 0.5em 0em gold; */
+    box-shadow: inset 0.5em 0em rgb(109, 43, 224);; 
 }
 
 .card-text {
